@@ -45,7 +45,7 @@ Q11_Q15.Solve(My_Gene_fasta[0], Translated_Frames_fasta, ANSWERS)
 Q16_Q20.Solve(My_Gene_fasta[0], Translated_Frames_fasta, ANSWERS)
 
 
-with open("Result.txt", 'w') as writeOut:
+with open("run_log.txt", 'w') as writeOut:
     for i in range(len(QUESTIONS)):
         res = "\t" + "\n\t".join(ANSWERS[i].split('\n'))
         print(QUESTIONS[i])
