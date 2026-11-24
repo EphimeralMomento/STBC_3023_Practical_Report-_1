@@ -1,3 +1,7 @@
+"""
+ALL OF THE CODE IS HANDWRITTEN BY A211474 :>
+"""
+
 from typing import *
 from collections import deque
 

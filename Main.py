@@ -1,3 +1,9 @@
+"""
+ALL OF THE CODE IS HANDWRITTEN BY A211474 :>
+"""
+
+
+
 from typing import *
 from fasta_util import *
 import Q1_Q5

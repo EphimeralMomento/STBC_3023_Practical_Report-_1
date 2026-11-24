@@ -1,3 +1,7 @@
+"""
+ALL OF THE CODE IS HANDWRITTEN BY A211474 :>
+"""
+
 from fasta_util import *
 
 def Solve(ref_MyGene_FASTA:FASTA, ref_Translated_FASTA:Sequence[FASTA], ref_ANSWERS:list[str]):
