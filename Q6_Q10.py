@@ -10,10 +10,12 @@ def Solve(ref_MyGene_FASTA:FASTA, ref_Translated_FASTA:Sequence[FASTA], ref_ANSW
 
     """ ============= Question 7 ============= """
     fwd2 = FASTA.toAminoAcid(ref_MyGene_FASTA.seq[1::])
+    fwd2AA = fwd2.find('*')
     stop_position_1st_pos = 3*fwd2.find('*') + 1
     codon3 = ref_MyGene_FASTA.seq[stop_position_1st_pos:stop_position_1st_pos+3]
     
-    ref_ANSWERS[6] = f"stop_position_1st_pos: {stop_position_1st_pos+1}"
+    ref_ANSWERS[6] = f"stop_position_aminoAcid: {fwd2AA+1}"
+    ref_ANSWERS[6] += f"\nstop_position_1st_pos: {stop_position_1st_pos+1}"
     ref_ANSWERS[6] += f"\ncodon: ({(codon3[0])}){codon3[1:3]}"
     
     """ ============= Question 8 ============= """
