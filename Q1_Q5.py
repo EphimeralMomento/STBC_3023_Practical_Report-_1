@@ -19,7 +19,8 @@ def Solve(ref_MyGene_FASTA:FASTA, ref_Translated_FASTA:Sequence[FASTA], ref_ANSW
     """ ============= Question 4 ============= """
     stop_Dict = {fasta.name:fasta.seq.count('*') for fasta in ref_Translated_FASTA}
     ref_ANSWERS[3] = ("Name : StopCodonCount\n")
-    ref_ANSWERS[3] = "\n".join(f"{'>>' if v == 5 else ''} {k}:{v}" for k,v in stop_Dict.items())
+    ref_ANSWERS[3] += "\n".join(f"  {'>>' if v >= 5 else ''}  {k}:{v}" for k,v in stop_Dict.items())
+    ref_ANSWERS[3] += f"\n{len([0 for k,v in stop_Dict.items() if v >= 5])} frames have at least 5 Stop codon"
     
     """ ============= Question 5 ============= """
     seqCount_Dict = {fasta.name:(len(fasta.seq), len(fasta.seq.replace('*',''))) for fasta in ref_Translated_FASTA}

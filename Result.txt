@@ -11,12 +11,14 @@ Q03. What GC percentage does a program calculate for the input DNA, rounded to t
 	56.28%
 
 Q04. After parsing translated_frames.fasta, how many sequence records have AT LEAST FIVE * stop symbols?
-	 My_gene_frame_+1 Translation of frame +1:1
-	>> My_gene_frame_+2 Translation of frame +2:5
-	 My_gene_frame_+3 Translation of frame +3:22
-	 My_gene_frame_-1 Translation of frame -1:6
-	>> My_gene_frame_-2 Translation of frame -2:5
-	 My_gene_frame_-3 Translation of frame -3:19
+	Name : StopCodonCount
+	    My_gene_frame_+1 Translation of frame +1:1
+	  >>  My_gene_frame_+2 Translation of frame +2:5
+	  >>  My_gene_frame_+3 Translation of frame +3:22
+	  >>  My_gene_frame_-1 Translation of frame -1:6
+	  >>  My_gene_frame_-2 Translation of frame -2:5
+	  >>  My_gene_frame_-3 Translation of frame -3:19
+	5 frames have at least 5 Stop codon
 
 Q05. Which of these reading frames contain exactly 446 amino-acid symbols in translated_frames.fasta, INCLUDING any * stop symbol? Select ALL.
 	Name : AminoAcidCount inc. * : AminoAcidCount not inc. * 
